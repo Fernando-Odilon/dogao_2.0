@@ -1,0 +1,21 @@
+{
+  "name": "dogao_2.0",
+  "version": "1.0.0",
+  "description": "Criação de homepage temática sobre uma hotdogueria",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dogão",
+    "display",
+    "flex",
+    "position",
+    "section",
+    "a",
+    "css",
+    "hmtl"
+  ],
+  "author": "Fernando Odilon",
+  "license": "ISC"
+}
