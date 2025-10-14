@@ -2,17 +2,15 @@
 
 
 
-body{
-    width: 100vw;
-    height: 100vh;
-}
 
 header{
-    width: 100%;
-    height: 7%;
+    width: 100vw;
+    height: 7vh;
     background: rgb(193, 48, 33);
     position: fixed;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 nav{
@@ -24,40 +22,96 @@ nav{
     
 }
 
-.lista_navbar{
+.lista-navbar{
     display: flex;
     width: 80%;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 23px;
     padding: 0 50px;
     
 }
 
 
-.lista_navbar li{
+.lista-navbar li{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.lista_navbar li a{
+.lista-navbar li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 18px;
-    padding: 25px 40px;
-        
-    
-
+    padding: 23px 40px;
     font-weight: 700;
 }
 
 main{
-    width: 100%;
-    height: 90%;
-    
+    width: 100vw;
+    height: 50vw;
 }
 
+.container-chamada{
+    width: 100%;
+    height: 60%;
+    background: #FFF8EE;;
+    padding: 4% 0;
+    background-image:url(../img/painel-incial.png);
+    background-size: cover;
+    background-position: center;
+}
 
+.container-chamada-content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 28%;
+    height: 100%;
+    position: relative;
+    top: 7%;
+    left: 5%;
+    gap: 50px;
+
+}
+
+.container-chamada-content h1{
+    font-size: 70px;
+    text-align: left;
+    color:#FFF8EE;
+    font-weight:bolder;
+    font-family: "Franklin Gothic Medium";
+}
+
+.container-chamada-content a{
+    align-self: center;
+    font-size: 30px;
+    padding: 10px 50px;
+    background-color: #FFF8EE;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.container-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rebeccapurple;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-produtos h2{
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    background-color:#F6AF30;
+}
+
+.produto-comum{
+    background-color: aqua;
+    width: 15%;
+    height: 40%;
+    border: red solid 5px
+}
