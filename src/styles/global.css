@@ -95,18 +95,27 @@ main{
 }
 
 .container-produtos{
-    display: flex;
     flex-wrap: wrap;
-    background-color: rebeccapurple;
+    background-color: rgb(162, 0, 255);
     width: 100vw;
     height: 100vh;
 }
 
-.container-produtos h2{
-    display: block;
+
+.container-produtos h2 {
+    display: inline-block;
+    text-align: center;
     padding: 10px;
     font-size: 30px;
-    background-color:#F6AF30;
+    background-color: #F6AF30;
+    color: #5F371E;
+    border-radius: 10px;
+    border: solid 4px #ffdea1;
+}
+
+.content-produtos{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .produto-comum{
