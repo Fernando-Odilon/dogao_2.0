@@ -96,13 +96,13 @@ main{
 
 .container-produtos{
     flex-wrap: wrap;
-    background-color: rgb(162, 0, 255);
+    background-color:#FFF8EE;
     width: 100vw;
     height: 100vh;
 }
 
 
-.container-produtos h2 {
+.main-titulo{
     display: inline-block;
     text-align: center;
     padding: 10px;
@@ -119,8 +119,60 @@ main{
 }
 
 .produto-comum{
-    background-color: aqua;
-    width: 15%;
-    height: 40%;
-    border: red solid 5px
+    width: 20%;
+    height: 710px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffd68f;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: red solid 5px */
+}
+
+.img-dog{
+    display: block;
+    width: 365px;
+    height: 365px;
+    background: black;
+    border-radius: 20px;
+}
+
+.produto-comum h3{
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: 800;
+    margin: 10px 10px;
+
+
+}
+
+.produto-comum p{
+    font-family: "Roboto";
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0 10px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: rgb(130, 32, 21);
+    line-height: 30px;
+
+}
+
+.produto-comum a{
+    display: inline-block;
+    margin: 30px 5px 0;
+    padding: 10px 30px;
+    background: #ffb936;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: "Roboto";
+    color: rgb(130, 32, 21);
+    font-weight: 700;
+
+
+}
+
+.container-promocoes{
+    display: flex;
 }
