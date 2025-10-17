@@ -2,7 +2,7 @@
 
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -18,27 +18,20 @@ header {
 
 nav {
     display: flex;
-    gap: 60px;
     align-items: center;
+    gap: 60px;
     width: 100%;
     height: 100%;
     display: flex;
-    font-family: "Roboto";
     border-bottom: #F6AF30 solid 2px;
-
-
 }
 
 
-.icone{
+.icone {
     display: flex;
-    width: 5%;
+    height: 90%;
     margin-left: 2%;
     overflow-y: hidden;
-}
-
-nav img{
-    height: 100%;
 }
 
 .lista-navbar {
@@ -73,18 +66,18 @@ nav img{
     transition: 0.2s ease-in;
 }
 
-.lista-navbar li a:hover{
-    color:#ffb936;
+.lista-navbar li a:hover {
+    color: #ffb936;
     transform: scale(1.02);
 }
 
-.anuncio-peca-ja{
+.anuncio-peca-ja {
     align-self: center;
     height: 100%;
     overflow-y: hidden;
 }
 
-.anuncio-peca-ja img{
+.anuncio-peca-ja img {
     align-self: center;
     height: 90%;
     overflow-y: hidden;
@@ -132,7 +125,7 @@ nav img{
     transition: transform 0.5s ease;
 }
 
-.container-chamada-content a:hover{
+.container-chamada-content a:hover {
     transform: scale(1.05);
 }
 
@@ -183,13 +176,8 @@ nav img{
 
 }
 
-.img-dog {
-    width: 100%;
-    border-radius: 20px;
-}
 
 .produto-comum-card h3 {
-    font-family: "Roboto";
     font-size: 25px;
     font-weight: 800;
     margin: 10px 10px;
@@ -198,7 +186,6 @@ nav img{
 }
 
 .produto-comum-card p {
-    font-family: "Roboto";
     font-size: 25px;
     font-weight: 600;
     padding: 0 10px;
@@ -216,11 +203,9 @@ nav img{
     background: #ffb936;
     font-size: 20px;
     border-radius: 10px;
-    font-family: "Roboto";
     color: rgb(130, 32, 21);
     font-weight: 700;
-
-
+    text-align: center;
 }
 
 .produto-comum-card span {
@@ -275,14 +260,13 @@ footer {
 
 .sobre-nos figcaption h3 {
     font-size: 25px;
-    padding: 5% 0; 
+    padding: 5% 0;
 }
 
 .sobre-nos figcaption p {
-    font-family: "Roboto";
     font-size: 20px;
     padding-top: 10%;
-    line-height: 25px;
+    line-height: 35px;
 }
 
 
@@ -375,46 +359,46 @@ footer {
 
 
 
-.container-cadastro{
+.container-cadastro {
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
 }
 
-.cadastro-content{
-    background-color: #ffefd3; 
+.cadastro-content {
+    background-color: #ffefd3;
     width: 55%;
     height: 100%;
     padding: 30px 50px;
     color: #5F371E;
     text-align: center;
     border-radius: 15px;
-    border: 5px solid #F6AF30; 
+    border: 5px solid #F6AF30;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.cadastro-content h2{
+.cadastro-content h2 {
     font-size: 36px;
     margin-bottom: 10px;
     color: rgb(130, 32, 21);
 }
 
-.cadastro-content p{
+.cadastro-content p {
     font-size: 18px;
     margin-bottom: 25px;
 }
 
 
-.form-cadastro{
+.form-cadastro {
     display: flex;
     flex-direction: column;
     height: 75%;
-    gap: 20px; 
+    gap: 20px;
     padding: 25px;
-    background-color: #F6AF30; 
+    background-color: #F6AF30;
     border-radius: 10px;
     color: #5F371E;
 }
@@ -426,19 +410,19 @@ footer {
     margin-top: 5px;
 }
 
-.input-cadastro{
+.input-cadastro {
     width: 100%;
     height: 15%;
-    background:#ffeac4;
+    background: #ffeac4;
     border-radius: 10px;
     padding: 0 2%;
     margin-bottom: 3%;
     font-size: 20px;
-    border:#a62c1f solid 2px;
+    border: #a62c1f solid 2px;
     color: #a62c1f;
 }
 
-.button-submit{
+.button-submit {
     width: 70%;
     padding: 1%;
     color: #ffefd3;
@@ -452,8 +436,8 @@ footer {
     cursor: pointer;
 }
 
-.button-submit:hover{
-    background:#741f16;
+.button-submit:hover {
+    background: #741f16;
     transform: scale(1.02);
 }
 
@@ -475,7 +459,6 @@ footer {
     width: 100vw;
     color: #ffefd3;
     font-size: 18px;
-    font-family: "Roboto";
     padding: 2% 0;
 }
 
@@ -489,4 +472,10 @@ footer {
 .container-direitos-autorais img {
     height: 150px;
     border-radius: 10px;
+}
+
+/* Classe para configurar o uso de imagens estruturais de visualização */
+.img-dog {
+    width: 100%;
+    border-radius: 20px;
 }
