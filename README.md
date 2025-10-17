@@ -29,17 +29,6 @@ O **Dogão do Ivo** é um projeto de site para uma lanchonete fictícia especial
 
 ---
 
-## ▶️ Como Visualizar o Projeto
-
-1. Clone o repositório:
-   git clone https://github.com/seu-usuario/dogao-do-ivo.git
-
-Acesse a pasta do projeto:
-
-bash
-Copiar código
-cd dogao-do-ivo
-Abra o arquivo index.html com o navegador de sua escolha (basta dar dois cliques nele).
 
 ✍️ Agradecimentos
 Este projeto foi desenvolvido como parte de um desafio proposto pelo Professor Ivo, com o objetivo de aplicar conhecimentos de HTML e CSS na criação de uma landing page funcional e estilizada.
