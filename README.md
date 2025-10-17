@@ -29,26 +29,6 @@ O **Dogão do Ivo** é um projeto de site para uma lanchonete fictícia especial
 
 ---
 
-## 📁 Estrutura de Pastas
-
-/dogao-do-ivo
-├── index.html
-├── /src
-│ ├── /img
-│ │ ├── logo-negativa.png
-│ │ ├── trabalhadores.png
-│ │ ├── whatsapp.png
-│ │ ├── instagram.png
-│ │ └── github.png
-│ └── /styles
-│ ├── reset.css
-│ └── global.css
-
-yaml
-Copiar código
-
----
-
 ## ▶️ Como Visualizar o Projeto
 
 1. Clone o repositório:
