@@ -55,7 +55,7 @@ nav{
 
 main{
     width: 100vw;
-    min-height: 100vw;
+    min-height: 100vh;
 }
 
 .container-chamada{
@@ -100,7 +100,7 @@ main{
 
 .container-produtos{
     flex-wrap: wrap;
-    background-color:#FFF8EE;
+    background: linear-gradient(180deg, rgba(255, 239, 211, 1) 42%, rgba(255, 238, 174, 1) 72%, rgb(255, 202, 104) 100%);
     padding: 3% 0;
     width: 100%;
     height: 100%;
@@ -123,40 +123,43 @@ main{
     display: flex;
     justify-content: space-evenly;
     padding: 3% 0;
+
 }
 
-.produto-comum{
+.produto-comum-card{
     width: 20%;
-    max-height: 5%;
+    height: 10%;
     display: flex;
     flex-wrap: wrap;
-    background: #ffd68f;
+    background: #ffefd3;
     padding: 20px;
     border-radius: 10px;
-    /* border: red solid 5px */
+    border: #F6AF30 solid 3px;
+    box-shadow: 1px 1px 10px 1px #F6AF30;
 }
 
 
-.produto-comum figure{
-    height: 539px;
+.produto-comum-card figure{
+    height: 20%;
+
 }
 .img-dog{
     width: 100%;
     border-radius: 20px;
 }
 
-.produto-comum h3{
+.produto-comum-card h3{
     font-family: "Roboto";
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 800;
     margin: 10px 10px;
 
 
 }
 
-.produto-comum p{
+.produto-comum-card p{
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     padding: 0 10px;
     text-align: justify;
@@ -166,12 +169,12 @@ main{
 
 }
 
-.produto-comum a{
+.produto-comum-card a{
     display: inline-block;
-    margin: 30px 5px 0;
-    padding: 10px 12%;
+    width: 75%;
+    padding: 4%;
     background: #ffb936;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 10px;
     font-family: "Roboto";
     color: rgb(130, 32, 21);
@@ -179,72 +182,128 @@ main{
 
 
 }
-
+.produto-comum-card span{
+    text-decoration: line-through;
+}
 .container-promocoes{
+    background: linear-gradient(180deg,rgb(255, 202, 104) 80%, rgba(193, 48, 33, 1) 100%);
+}
+
+
+footer{
+    background: rgba(193, 48, 33, 1);
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.container-redes-sociais{
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
 }
 
-
-footer {
+.sobre-nos{
+    width: 50%;
+    height: 60%;
 }
 
-.container-redes-sociais {
-}
-
-.sobre-nos {
-}
-
-.sobre-nos figure {
+.sobre-nos figure{
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .sobre-nos img {
+    height: 100%;
+    border-radius: 5%;
+
 }
 
-.sobre-nos figcaption {
+.sobre-nos figcaption{
+    width: 50%;
+    height: 100%;
+    padding: 0 3%;
+    color:#ffefd3;
 }
 
-.contate-nos {
+.sobre-nos figcaption h3{
+    font-size: 25px;
+    padding: 10% 0;
 }
 
-.contate-nos h2 {
+.sobre-nos figcaption p{
+    font-family: "Roboto";
+    font-size: 20px;    
+    padding-top: 3%;
 }
 
-.redes-sociais {
+
+.contate-nos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 50%;
+    padding: 30px 0;
+    color: #ffefd3;
 }
 
-.redes-sociais img {
+.contate-nos h2{
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.container-mais-informacoes {
+.redes-sociais{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
 }
 
-.content-footer {
+.redes-sociais a{
+    display: flex;
+    align-items: center;
+}
+.redes-sociais img{
+    height: 95%;
+    padding: 0;
+    margin: 0;
 }
 
-.content-footer h3 {
+.container-mais-informacoes{
 }
 
-.content-footer ul {
+.content-footer{
 }
 
-.content-footer ul li {
+.content-footer h3{
 }
 
-.content-footer ul li a {
+.content-footer ul{
 }
 
-.content-footer ul li a:hover {
+.content-footer ul li{
 }
 
-/* Seção de Direitos Autorais */
-.container-direitos-autorais {
+.content-footer ul li a{
 }
 
-.container-direitos-autorais p {
+.content-footer ul li a:hover{
 }
 
-.container-direitos-autorais figure {
+.container-direitos-autorais{
 }
 
-.container-direitos-autorais img {
+.container-direitos-autorais p{
+}
+
+.container-direitos-autorais figure{
+}
+
+.container-direitos-autorais img{
 }
