@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,26 @@
 <body>
     <header>
         <nav>
-            <a href="/"><img src="" alt="Logo negativa da marca"></a>
+            <a class="icone" href="./index.html"><img src="./src/img/logo-negativa.png" alt="Logo negativa da marca"></a>
 
             <ul class="lista-navbar">
-                <li><a href="#"><span class="buttom-nav">INICIO</span></a></li>
-                <li><a href="#"><span class="buttom-nav">CARDÁPIO</span></a></li>
-                <li><a href="#"><span class="buttom-nav">FALE CONOSCO</span></a></li>
-                <li><a href="#"><span class="buttom-nav">SOBRE NÓS</span></a></li>
+                <li><a href="#inicio"><span class="buttom-nav">INICIO</span></a></li>
+                <li><a href="#cardapio"><span class="buttom-nav">CARDÁPIO</span></a></li>
+                <li><a href="#sobre-nos"><span class="buttom-nav">SOBRE NÓS</span></a></li>
+                <li><a href="#mais"><span class="buttom-nav">MAIS</span></a></li>
             </ul>
 
-            <div class="anuncio-peca-ja">
-                <h3>Peça já o seu</h3>
-                <a href=""><img src="" alt="Logo_whatsapp"></a>
-            </div>
         </nav>
     </header>
     <main>
-        <section class="container-chamada">
+        <section class="container-chamada" id="inicio">
             <div class="container-chamada-content">
                 <h1>OS MELHORES <br /> HOTDOGS <br />DA REGIÃO</h1>
                 <a href="">FAZER PEDIDO AGORA</a>
             </div>
         </section>
 
-       <section class="container-produtos">
+       <section class="container-produtos" id="cardapio">
             <h2 class="main-titulo">CARDÁPIO</h2>
             <div class="content-produtos">
                 <article class="produto-comum-card">
@@ -117,28 +113,28 @@
         </section>
     </main>
     <footer>
-        <section class="container-redes-sociais">
+        <section class="container-redes-sociais" id="sobre-nos">
             <div class="sobre-nos">
                 <figure>
-                    <img src="https://placehold.co/365x365" alt="Trabalhadores preparando cachorro-quente">
+                    <img src="./src/img/trabalhadores.png" alt="Trabalhadores preparando cachorro-quente">
                     <figcaption>
                         <h3>SOBRE NÓS</h3>
                         <p>Nossa lanchonete nasceu com o propósito de trazer o verdadeiro sabor do cachorro-quente brasileiro. Trabalhamos com ingredientes frescos e muito carinho no preparo, para que cada mordida seja uma experiência única. Mais do que lanches, oferecemos momentos de sabor e alegria.</p>
                     </figcaption>
                 </figure>
             </div>
-    
+       
             <div class="contate-nos">
                 <h2>CONTATE-NOS</h2>
                 <div class="redes-sociais">
-                    <a href=""><img src="https://placehold.co/365x365" alt="Whatsapp"></a>
-                    <a href=""><img src="https://placehold.co/365x365" alt="Instagram"></a>
-                    <a href=""><img src="https://placehold.co/365x365" alt="Github"></a>
+                    <a href=""><img src="./src/img/whatsapp.png" alt="Whatsapp"></a>
+                    <a href=""><img src="./src/img/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="./src/img/github.png" alt="Github"></a>
                 </div>
             </div>
         </section>
-    
-        <section class="container-mais-informacoes">
+   
+        <section class="container-mais-informacoes" id="mais">
             <div class="content-footer">
                 <h3>DOGÃO DO IVO</h3>
                 <p>O melhor hot dog da cidade. <br> Sabor, qualidade e paixão em cada mordida.</p>
@@ -150,17 +146,17 @@
                     <li><a href="#">INÍCIO</a></li>
                     <li><a href="#">CARDÁPIO</a></li>
                     <li><a href="#">SOBRE NÓS</a></li>
-                    <li><a href="#">FALE CONOSCO</a></li>
+                    <li><a href="#">MAIS</a></li>
                 </ul>
             </div>
-    
+       
             <div class="content-footer endereco">
                 <h3>Contato</h3>
                 <p>Rua Hugo Negrini, XXXX</p>
                 <p>Araracity - SP</p>
                 <p>Telefone: (16) 98765-4321</p>
             </div>
-    
+            
             <div class="content-footer">
                 <h3>Condecorações</h3>
                 <div class="social-icons">
@@ -168,11 +164,26 @@
                 </div>
             </div>
         </section>
-    
+
+        <section class="container-cadastro">
+            <div class="cadastro-content">
+                <h2>RECEBA NOSSAS PROMOÇÕES!</h2>
+                <p>Cadastre-se para receber as melhores ofertas e novidades do Dogão do Ivo diretamente no seu e-mail.</p>
+                <form action="#" method="POST" class="form-cadastro">
+                    <label class="label-cadastro" for="email">E-mail:</label>
+                    <input class="input-cadastro" type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    
+                    <label class="label-cadastro" for="cep">Seu CEP (para ofertas regionais):</label>
+                    <input class="input-cadastro" type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" title="Formato esperado: 00000-000">
+
+                    <button class="button-submit" type="submit">CADASTRAR</button>
+                </form>
+            </div>
+        </section>
         <section class="container-direitos-autorais">
-            <p>&copy; 2025 Dogão do Ivo. Todos os direitos reservados.</p>
+            <p><strong>&copy; 2025 Dogão do Ivo. Todos os direitos reservados.</strong></p>
             <figure>
-                <img src="img/logo-negativa.png" alt="Logo Dogão do Ivo">
+                <img src="./src/img/logo-negativa.png" alt="Logo Dogão do Ivo">
             </figure>
         </section>
     </footer>
