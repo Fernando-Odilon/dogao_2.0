@@ -2,10 +2,6 @@
 
 O **Dogão do Ivo** é um projeto de site para uma lanchonete fictícia especializada em hot dogs. Ele oferece uma experiência visual atrativa e navegação simples, permitindo que os clientes visualizem o cardápio, conheçam as promoções e realizem pedidos com facilidade.
 
-## 📸 Preview
-
-> ⚠️ Imagens do projeto usam placeholders (`https://placehold.co`) e devem ser substituídas por imagens reais de produtos.
-
 ---
 
 ## 🧠 Funcionalidades
@@ -38,7 +34,3 @@ Distribuído sob a licença MIT. Veja LICENSE para mais informações.
 
 📌 Observações
 Este é um projeto estático e não possui backend.
-
-O botão "Comprar Agora" e o formulário de cadastro não estão conectados a funcionalidades reais — são ilustrativos.
-
-Projeto desenvolvido com 💛 e fome de aprender.
