@@ -2,8 +2,11 @@
 
 
 
+html{
+    scroll-behavior: smooth;
+}
 
-header{
+header {
     width: 100vw;
     height: 7vh;
     background: rgb(193, 48, 33);
@@ -13,16 +16,32 @@ header{
     z-index: 2;
 }
 
-nav{
+nav {
+    display: flex;
+    gap: 60px;
+    align-items: center;
     width: 100%;
     height: 100%;
     display: flex;
     font-family: "Roboto";
-    
-    
+    border-bottom: #F6AF30 solid 2px;
+
+
 }
 
-.lista-navbar{
+
+.icone{
+    display: flex;
+    width: 5%;
+    margin-left: 2%;
+    overflow-y: hidden;
+}
+
+nav img{
+    height: 100%;
+}
+
+.lista-navbar {
     display: flex;
     width: 80%;
     justify-content: space-evenly;
@@ -30,18 +49,18 @@ nav{
     list-style: none;
     gap: 23px;
     padding: 0 50px;
-    
+
 }
 
 
-.lista-navbar li{
+.lista-navbar li {
     height: 100%;
     width: 25%;
 
-    
+
 }
 
-.lista-navbar li a{
+.lista-navbar li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,82 +70,102 @@ nav{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 700;
+    transition: 0.2s ease-in;
 }
 
-main{
+.lista-navbar li a:hover{
+    color:#ffb936;
+    transform: scale(1.02);
+}
+
+.anuncio-peca-ja{
+    align-self: center;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.anuncio-peca-ja img{
+    align-self: center;
+    height: 90%;
+    overflow-y: hidden;
+}
+
+.container-chamada {
     width: 100vw;
-    min-height: 100vh;
-}
-
-.container-chamada{
-    width: 100%;
-    height: 50%;
-    background: #FFF8EE;;
+    height: 100vh;
+    background: #FFF8EE;
+    ;
     padding: 4% 0;
-    background-image:url(../img/painel-incial.png);
+    background-image: url(../img/painel-incial.png);
     background-size: cover;
     background-position: center;
 }
 
-.container-chamada-content{
+.container-chamada-content {
     display: flex;
     flex-wrap: wrap;
-    width: 28%;
+    width: 70%;
     height: 100%;
     position: relative;
     top: 7%;
     left: 5%;
-    gap: 50px;
-
 }
 
-.container-chamada-content h1{
-    font-size: 70px;
+.container-chamada-content h1 {
+    font-size: 120px;
     text-align: left;
-    color:#FFF8EE;
-    font-weight:bolder;
+    color: #FFF8EE;
+    font-weight: bolder;
     font-family: "Franklin Gothic Medium";
 }
 
-.container-chamada-content a{
+.container-chamada-content a {
     align-self: center;
-    font-size: 30px;
+    font-size: 50px;
+    margin: 0 15px;
     padding: 10px 50px;
     background-color: #FFF8EE;
     color: black;
     font-weight: 600;
     border-radius: 10px;
+    box-shadow: #ffb936 5px 5px 10px;
+    transition: transform 0.5s ease;
 }
 
-.container-produtos{
+.container-chamada-content a:hover{
+    transform: scale(1.05);
+}
+
+.container-produtos {
     flex-wrap: wrap;
     background: linear-gradient(180deg, rgba(255, 239, 211, 1) 42%, rgba(255, 238, 174, 1) 72%, rgb(255, 202, 104) 100%);
     padding: 3% 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    scroll-margin-top: 10vh;
 }
 
 
-.main-titulo{
+.main-titulo {
     display: inline-block;
     text-align: center;
     padding: 10px;
     font-size: 30px;
-    background-color: #F6AF30;
+    background: #F6AF30;
     color: #5F371E;
     border-radius: 10px;
     border: solid 4px #ffdea1;
     margin-left: 4%;
 }
 
-.content-produtos{
+.content-produtos {
     display: flex;
     justify-content: space-evenly;
     padding: 3% 0;
 
 }
 
-.produto-comum-card{
+.produto-comum-card {
     width: 20%;
     height: 10%;
     display: flex;
@@ -139,16 +178,17 @@ main{
 }
 
 
-.produto-comum-card figure{
+.produto-comum-card figure {
     height: 20%;
 
 }
-.img-dog{
+
+.img-dog {
     width: 100%;
     border-radius: 20px;
 }
 
-.produto-comum-card h3{
+.produto-comum-card h3 {
     font-family: "Roboto";
     font-size: 25px;
     font-weight: 800;
@@ -157,7 +197,7 @@ main{
 
 }
 
-.produto-comum-card p{
+.produto-comum-card p {
     font-family: "Roboto";
     font-size: 25px;
     font-weight: 600;
@@ -169,7 +209,7 @@ main{
 
 }
 
-.produto-comum-card a{
+.produto-comum-card a {
     display: inline-block;
     width: 75%;
     padding: 4%;
@@ -182,21 +222,26 @@ main{
 
 
 }
-.produto-comum-card span{
+
+.produto-comum-card span {
     text-decoration: line-through;
 }
-.container-promocoes{
-    background: linear-gradient(180deg,rgb(255, 202, 104) 80%, rgba(193, 48, 33, 1) 100%);
+
+.container-promocoes {
+    background: linear-gradient(180deg, rgb(255, 202, 104) 80%, rgba(193, 48, 33, 1) 100%);
 }
 
 
-footer{
+footer {
     background: rgba(193, 48, 33, 1);
     width: 100vw;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container-redes-sociais{
+.container-redes-sociais {
     width: 100%;
     height: 100%;
     display: flex;
@@ -204,12 +249,12 @@ footer{
     padding: 10% 0;
 }
 
-.sobre-nos{
+.sobre-nos {
     width: 50%;
     height: 60%;
 }
 
-.sobre-nos figure{
+.sobre-nos figure {
     display: flex;
     width: 100%;
     height: 100%;
@@ -221,26 +266,27 @@ footer{
 
 }
 
-.sobre-nos figcaption{
+.sobre-nos figcaption {
     width: 50%;
     height: 100%;
     padding: 0 3%;
-    color:#ffefd3;
+    color: #ffefd3;
 }
 
-.sobre-nos figcaption h3{
+.sobre-nos figcaption h3 {
     font-size: 25px;
-    padding: 10% 0 5% auto;
+    padding: 5% 0; 
 }
 
-.sobre-nos figcaption p{
+.sobre-nos figcaption p {
     font-family: "Roboto";
-    font-size: 20px;    
-    padding-top: 3%;
+    font-size: 20px;
+    padding-top: 10%;
+    line-height: 25px;
 }
 
 
-.contate-nos{
+.contate-nos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -250,60 +296,63 @@ footer{
     color: #ffefd3;
 }
 
-.contate-nos h2{
+.contate-nos h2 {
     font-size: 30px;
     font-weight: bolder;
     padding: 10%;
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
+    gap: 20px;
     width: 100%;
     height: 50%;
     justify-content: space-evenly;
 }
 
-.redes-sociais a{
+.redes-sociais a {
     display: flex;
+    padding: 0;
     align-items: center;
 
 }
-.redes-sociais img{
-    height: 95%;
-    padding: 0;
-    margin: 0;
+
+.redes-sociais img {
+    height: 85%;
+    border-radius: 10px;
 }
 
-.container-mais-informacoes{
+.container-mais-informacoes {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: 35vh;
     color: #ffefd3;
+    scroll-margin-top: 10vh;
 }
 
-.content-footer{
+.content-footer {
     width: 20%;
     height: 100%;
 }
 
-.content-footer h3{
+.content-footer h3 {
     font-size: 25px;
     padding: 5% 0;
 }
 
-.content-footer p{
+.content-footer p {
     font-size: 20px;
     line-height: 35px;
 }
 
-.content-footer ul{
+.content-footer ul {
     width: 100%;
     height: 75%;
     justify-content: center;
 }
 
-.content-footer ul li a{
+.content-footer ul li a {
     font-size: 20px;
     font-weight: 600;
     display: inline-block;
@@ -316,25 +365,128 @@ footer{
 
 }
 
-.endereco p{
+.endereco p {
     line-height: 50px;
 }
 
-.content-footer ul li a:hover{
+.content-footer ul li a:hover {
     color: #F6AF30;
 }
 
-.container-direitos-autorais{
+
+
+.container-cadastro{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.cadastro-content{
+    background-color: #ffefd3; 
+    width: 55%;
+    height: 100%;
+    padding: 30px 50px;
+    color: #5F371E;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px solid #F6AF30; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cadastro-content h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgb(130, 32, 21);
+}
+
+.cadastro-content p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    gap: 20px; 
+    padding: 25px;
+    background-color: #F6AF30; 
+    border-radius: 10px;
+    color: #5F371E;
+}
+
+.label-cadastro {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.input-cadastro{
     width: 100%;
-
-    background-color: aqua;
+    height: 15%;
+    background:#ffeac4;
+    border-radius: 10px;
+    padding: 0 2%;
+    margin-bottom: 3%;
+    font-size: 20px;
+    border:#a62c1f solid 2px;
+    color: #a62c1f;
 }
 
-.container-direitos-autorais p{
+.button-submit{
+    width: 70%;
+    padding: 1%;
+    color: #ffefd3;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: #a62c1f;
+    font-size: 40px;
+    align-self: center;
+    transition: transform 0.1s ease;
+    cursor: pointer;
 }
 
-.container-direitos-autorais figure{
+.button-submit:hover{
+    background:#741f16;
+    transform: scale(1.02);
 }
 
-.container-direitos-autorais img{
+.container-direitos-autorais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 5%;
+    background-color: #a62c1f;
+    border-top: 2px solid #ffeac4;
+
+}
+
+.container-direitos-autorais p {
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    color: #ffefd3;
+    font-size: 18px;
+    font-family: "Roboto";
+    padding: 2% 0;
+}
+
+.container-direitos-autorais figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container-direitos-autorais img {
+    height: 150px;
+    border-radius: 10px;
 }
